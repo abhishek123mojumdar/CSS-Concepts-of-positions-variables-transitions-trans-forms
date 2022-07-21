@@ -113,17 +113,43 @@ matrix ( [scaleX], [skewY], [skewX], [scaleY], [translateX], [translateY], ); */
 .b6 {
   transition-property: width;
   transition-delay: 0.5s;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 
   /* This basically means that when we hover over the div with class b6 cursor should change to pointer 
    @ The property transition-property:  tell us whicg property needs to be trasitioned
    @ transition-delay: tells us after how much time should the transition start;
-   @ transition-duration: tell us for how much duration the transition must last; */
+   @ transition-duration: tell us for how much duration the transition must last;
+   @ transition-timing-functio : the transition: starts slowly then gets fast;  */
 }
 
 .b6:hover {
   cursor: pointer;
   width: 80px;
+}
+
+/*  suppose we want to transition multiple properties then we can use the property transition-property: hover */
+
+.b7 {
+  /* transition-property: all;
+  transition-delay: 0.5s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in; 
+  the below is equivalent to above
+
+  transition short hand; [transition-property:] [transition-duration: ] [transition-timing-function: ] [transition-delay;]
+  */
+  transition: all 0.3s linear 0.5s;
+}
+
+.b7:hover {
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rosybrown;
+  border: 2px solid rosybrown;
+  transform: rotate(360deg);
 }
 
 /* ------------------------------------------------------------------- POSITIONING --------------------------------------------------------------------------------*/
