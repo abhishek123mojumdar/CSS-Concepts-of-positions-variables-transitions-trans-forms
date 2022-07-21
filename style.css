@@ -102,6 +102,30 @@ body {
 /* Fact : the TransForm properties get overridden by if multiple transform properties are added to a single element , the last transform property only gets executed 
 for example in case of class b1 ... even through there are multiple transform properties in the class only the rotate property gets executed*/
 
+/* To overcome the above problem we need to follow the matrix property
+matrix ( [scaleX], [skewY], [skewX], [scaleY], [translateX], [translateY], ); */
+
+.b5 {
+  transform: matrix(2, 1, 1, 1, 25, 25);
+}
+
+/* Transition need a trigger i.e what needs to happen in order for something to take place */
+.b6 {
+  transition-property: width;
+  transition-delay: 0.5s;
+  transition-duration: 1s;
+
+  /* This basically means that when we hover over the div with class b6 cursor should change to pointer 
+   @ The property transition-property:  tell us whicg property needs to be trasitioned
+   @ transition-delay: tells us after how much time should the transition start;
+   @ transition-duration: tell us for how much duration the transition must last; */
+}
+
+.b6:hover {
+  cursor: pointer;
+  width: 80px;
+}
+
 /* ------------------------------------------------------------------- POSITIONING --------------------------------------------------------------------------------*/
 
 /* Postioning : with CSS positioning we are always positioniong our elements in 4 directions top, right ,left , bottom i.e we are always moving our elements corresponding to out top right bottom or left postion
