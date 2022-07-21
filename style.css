@@ -80,6 +80,9 @@ body {
 }
 
 .b1 {
+  transform: translate(10px, 30px);
+  transform: skewX(20deg);
+  transform: scale(1.5);
   transform: rotate(45deg);
   /* rotates the element by 45 degrees; */
 }
@@ -88,11 +91,16 @@ body {
   /* increases the size of the element by 1.5  there are properties like sclaeX and scaleY which will change the scale corresponding to the mentioned axes*/
 }
 .b3 {
-  transform: rotate(45deg);
+  transform: skewX(20deg);
+  /* skews the element by the given degrees in the the given axes*/
 }
 .b4 {
-  transform: rotate(45deg);
+  transform: translate(10px, 30px);
+  /* Moves the element --  1st parameter is horizontal axis and the 2nd parameter is the vertical axis (the values can be positive and negative) it also has the translateX and translateY;*/
 }
+
+/* Fact : the TransForm properties get overridden by if multiple transform properties are added to a single element , the last transform property only gets executed 
+for example in case of class b1 ... even through there are multiple transform properties in the class only the rotate property gets executed*/
 
 /* ------------------------------------------------------------------- POSITIONING --------------------------------------------------------------------------------*/
 
