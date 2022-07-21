@@ -174,8 +174,8 @@ Absolute postion is basically positioned corresponding the nearest containing el
 }
 
 .parent-11 {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background-color: rgb(231, 210, 20);
   color: aliceblue;
   position: relative;
@@ -237,7 +237,35 @@ Absolute postion is basically positioned corresponding the nearest containing el
   align-items: center;
   position: sticky;
   top: 0px;
-  /* This is the threshold value here */
+  /* This is the threshold value here ; this basically means that the child 4 will go to top:0 i.e the top edge of the parent box and then it will stop (stick there)*/
+}
+
+.child-nxt-z1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 255, 85);
+  color: rgb(0, 5, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+  z-index: 5;
+  /* With the Z-index here we are stacking z1 over z2*/
+}
+
+.child-nxt-z2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 255, 255);
+  color: rgb(1, 8, 12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 260px;
+  top: 125px;
+  z-index: 0;
 }
 
 /* Fixed postioning is always fixed corresponding to the view port; It works exactly like the absolute positioning but the parent element is always the view port ; fixed also removes the element out of the document flow
