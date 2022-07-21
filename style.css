@@ -180,6 +180,7 @@ Absolute postion is basically positioned corresponding the nearest containing el
   color: aliceblue;
   position: relative;
   margin: 5rem;
+  overflow: auto;
 }
 
 .child-nxt-11 {
@@ -226,10 +227,25 @@ Absolute postion is basically positioned corresponding the nearest containing el
   bottom: 20px;
 }
 
+.child-nxt-55 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(247, 0, 255);
+  color: rgb(249, 251, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  /* This is the threshold value here */
+}
+
 /* Fixed postioning is always fixed corresponding to the view port; It works exactly like the absolute positioning but the parent element is always the view port ; fixed also removes the element out of the document flow
 
 * In the child 4 with the fixed positioning we can see that the element is always above the visible viewport by 20px
 
 */
+
+/* With sticky the element gets stuck after it has reached the threshhold-value */
 
 /* Z index decides the overlaw of the html elements i.e which element will be over which element */
