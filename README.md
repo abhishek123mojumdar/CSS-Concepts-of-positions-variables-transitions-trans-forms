@@ -11,7 +11,8 @@ relative
 absolute
 fixed
 sticky
-
-transitions
-
 pseudoElements
+transitions
+transforms
+
+Please please read through the comments I am sure you will find this helpful
