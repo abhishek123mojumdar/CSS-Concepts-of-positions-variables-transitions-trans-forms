@@ -70,7 +70,7 @@ body {
 .heading-postion {
   padding: 5px;
   margin: 5rem;
-  width: 15rem;
+  width: 30rem;
   color: aliceblue;
   background-color: coral;
   border-radius: 15px;
@@ -85,5 +85,75 @@ ALWAYS REMEMBER THE POSTIONING IS GOING TO HAPPEN CORRESPONDING TO THESE 4 PROPE
   top:100px;
 }
 
-the above basically means that we are offseting the box class away from the top edge by 100px , i.e the box2 class will move down by 100px
+the above basically means that we are offseting the box class away from the top edge by 100px , i.e the box2 class will move down by 100px and it is -ve100px it will move towards the top edge i.e it move outwards by 100px
+
+Relative postion is basically the original position
+Absolute postion is basically positioned corresponding the nearest containing element i.e the element containing the absolute positioned element
 */
+
+.parent {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  color: aliceblue;
+  position: relative;
+  margin: 5rem;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+
+  /* here the top and left position of the child box is corresponding to the parent box. The parent box has the relative postion and the child box has the absolute position which cases the child box to fix its postioning corresponding to the parent box */
+}
+
+/* Absolute elements are moved from the documnet flow i.e when any of the divs are positioned with absolute -->  the other divs are agnostic of the presence of the div and they take up the position of the DIV   */
+
+.parent-1 {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  color: aliceblue;
+  position: relative;
+  margin: 5rem;
+}
+
+.child-nxt-1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-nxt-2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 68, 255);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child-nxt-3 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(225, 0, 255);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fixed postioning is always fixed corresponding to the view port; It works exactly like the absolute positioning but the parent element is always the view port ; fixed also removes the element out of the document flow*/
+
+/* Z index decides the overlaw of the html elements i.e which element will be over which element */
