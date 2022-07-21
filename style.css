@@ -7,10 +7,42 @@ p {
 body {
   margin: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   /* if the flex-direction is row the align items will work on the column and if the if the direction is column the align-items will work on row; */
   justify-content: center;
+}
+
+.btn-container {
+  padding: 20px;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+/* before and after are pseudo elements that are added inside the selector/class/id before and after the content respectively . By :default these pseudo elements are inline elements . They align themselves in line with the content , however they can be made block level elements simply by adding the display : block */
+
+.heading::before {
+  content: '';
+  height: 5px;
+  width: 300px;
+  background-color: red;
+  display: block;
+  margin-top: 1rem;
+}
+
+.heading::after {
+  content: '';
+  height: 5px;
+  width: 300px;
+  background-color: red;
+  display: block;
+  margin-top: 1rem;
 }
 
 .container-1 {
@@ -34,3 +66,24 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
+.heading-postion {
+  padding: 5px;
+  margin: 5rem;
+  width: 15rem;
+  color: aliceblue;
+  background-color: coral;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Postioning : with CSS positioning we are always positioniong our elements in 4 directions top, right ,left , bottom i.e we are always moving our elements corresponding to out top right bottom or left postion
+ALWAYS REMEMBER THE POSTIONING IS GOING TO HAPPEN CORRESPONDING TO THESE 4 PROPERTIES
+
+.box-test {
+  position:relative;
+  top:100px;
+}
+
+the above basically means that we are offseting the box class away from the top edge by 100px , i.e the box2 class will move down by 100px
+*/
