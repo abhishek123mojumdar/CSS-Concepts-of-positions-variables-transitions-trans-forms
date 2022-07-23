@@ -70,13 +70,14 @@ body {
 }
 
 .heading-postion {
-  padding: 5px;
-  margin: 5rem;
-  width: 30rem;
+  margin: 4rem;
+  width: 12rem;
+  height: 3rem;
   color: aliceblue;
   background-color: coral;
   border-radius: 15px;
   text-align: center;
+  position: relative;
 }
 
 .b1 {
@@ -174,7 +175,6 @@ Absolute postion is basically positioned corresponding the nearest containing el
   background-color: black;
   color: aliceblue;
   position: relative;
-  margin: 5rem;
 }
 
 .child {
