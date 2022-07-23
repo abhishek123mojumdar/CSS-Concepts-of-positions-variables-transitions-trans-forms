@@ -140,7 +140,7 @@ matrix ( [scaleX], [skewY], [skewX], [scaleY], [translateX], [translateY], ); */
 
   transition short hand; [transition-property:] [transition-duration: ] [transition-timing-function: ] [transition-delay;]
   */
-  transition: all 0.3s linear 0.5s;
+  transition: 0.3s ease-in;
 }
 
 .b7:hover {
