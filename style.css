@@ -92,7 +92,7 @@ body {
   /* increases the size of the element by 2  there are properties like sclaeX and scaleY which will change the scale corresponding to the mentioned axes*/
 }
 .b3 {
-  transform: skewX(20deg);
+  transform: skewX(45deg);
   /* skews the element by the given degrees in the the given axes*/
 }
 .b4 {
