@@ -165,7 +165,7 @@ ALWAYS REMEMBER THE POSTIONING IS GOING TO HAPPEN CORRESPONDING TO THESE 4 PROPE
 
 the above basically means that we are offseting the box class away from the top edge by 100px , i.e the box2 class will move down by 100px and it is -ve100px it will move towards the top edge i.e it move outwards by 100px
 
-Relative postion is basically the original position
+Relative postion is the initial position of the html body . All other html elements have initial position as static.
 Absolute postion is basically positioned corresponding the nearest containing element i.e the element containing the absolute positioned element
 */
 
